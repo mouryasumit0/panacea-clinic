@@ -25,11 +25,6 @@
             <link href="main_style.css" rel="stylesheet" >
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
             </script>
-            <script type="text/javascript">
-                (function(){
-                emailjs.init("GMBUTSulNqjyb9NSu");
-            })();
-            </script>
     
         </head>
 
@@ -549,7 +544,7 @@
                                 </div><!--end col-->
 
                                 <div class="col-lg-6 col-md-7">
-                                    <form class="login-form p-4">
+                                    <form class="login-form p-4" id="contact-form">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                     <div class="mb-3">
@@ -592,7 +587,7 @@
     
                                             <div class="col-lg-12 mb-0">
                                                 <div class="d-grid">
-                                                    <button onclick="sendMail()" class="btn btn-purple">Submit</button>
+                                                    <button id="submit" class="btn btn-purple">Submit</button>
                                                 </div>
                                             </div><!--end col-->
     

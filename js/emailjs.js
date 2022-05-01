@@ -1,14 +1,24 @@
-function sendMail(param) {
-  var tempParams = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    subject: document.getElementById("subject").value,
-    comments: document.getElementById("comments").value,
-  };
+(function () {
+  emailjs.init("13T9u7k3DNvNkgvbZ");
+})();
 
-  emailjs
-    .send("service_a02zckb", "template_9fo3eyg", tempParams)
-    .then(function (res) {
-      console.log("success", res.status);
-    });
-}
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var tempParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      comments: document.getElementById("comments").value,
+    };
+    console.log(tempParams);
+    emailjs.send("Panacea_service", "contact_form", tempParams).then(
+      function (res) {
+        console.log("SUCCESS!");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  });

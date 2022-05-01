@@ -1,0 +1,50 @@
+.btn-purple{
+    background-color: #231E60 !important;
+  border: 1px solid #231E60 !important;
+  color: #ffffff !important;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+          box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+}
+
+.btn-purple:hover, .btn-purple:focus, .btn-purple:active, .btn-purple.active, .btn-purple.focus {
+    background-color: #3b3977 !important;
+    border-color: #3b3977 !important;
+    color: #ffffff !important;
+}
+.text-purple {
+    color: #231E60 !important;
+  }
+.bg-purple {
+    background-color: #231E60 !important;
+}
+
+a.text-purple:hover, a.text-purple:focus {
+    color: #231E60 !important;
+}
+.btn-soft-primary {
+    background-color: rgba(47, 85, 212, 0.1) !important;
+    border: 1px solid rgba(47, 85, 212, 0.1) !important;
+    color: #231E60 !important;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+            box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+}
+.btn-soft-primary:hover, .btn-soft-primary:focus, .btn-soft-primary:active, .btn-soft-primary.active, .btn-soft-primary.focus {
+    background-color: #231E60 !important;
+    border-color: #231E60 !important;
+    color: #ffffff !important;
+}
+.bg-soft-primary {
+    background-color: rgba(47, 85, 212, 0.1) !important;
+    border: 1px solid rgba(47, 85, 212, 0.1) !important;
+    color: #231E60 !important;
+}
+.features.fea-purple .content .title:hover {
+    color: #231E60 !important;
+}
+
+.features.fea-purple:hover {
+    -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+            box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    background-color: #231E60 !important;
+    color: #ffffff !important;
+  }

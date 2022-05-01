@@ -15,7 +15,7 @@ steps:
   - '--port'
   - '80'
   - '--region'
-  - 'ap-south1'
+  - 'us-central1'
   - '--platform'
   - 'managed'
   - '--allow-unauthenticated'

@@ -23,13 +23,6 @@
             <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
             <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
             <link href="main_style.css" rel="stylesheet" >
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-            </script>
-            <script type="text/javascript">
-                (function(){
-                emailjs.init("GMBUTSulNqjyb9NSu");
-            })();
-            </script>
     
         </head>
 
@@ -51,9 +44,9 @@
             <div class="container">
                 <!-- Logo container-->
                 <div>
-                    <a class="logo" href="#">
-                        <img src="images/logo-sl-dark-01.png" height="44" alt="">
-                        <!-- <h4 class="text-dark pt-3">Dr. Lote</h4> -->
+                    <a class="logo" href="index.html">
+                        <img src="images/logo-sl-dark-01.png" class="l-dark" height="44" alt="">
+                        <img src="images/logo-sl-light-01.png" class="l-light" height="44" alt="">
                     </a>
                 </div>                 
                 <div class="buy-button">
@@ -76,21 +69,23 @@
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="index.html" class="sub-menu-item" >Home</a></li>
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">About Us</a><span class="menu-arrow"></span>
+                            <a href="#" >About Us</a><span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a href="Profile-one.html" class="sub-menu-item">Dr. Sameer Lote</a></li>
                                 <li><a href="profile-two.html" class="sub-menu-item">Dr. Arundhati Lote</a></li>
                             </ul>
                         </li>
-        
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="page-blog-list.html">Blogs</a>    
+                            <a href="Services.html" >Services</a>    
+                        </li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="page-blog-list.html" >Blogs</a>    
                         </li>
                         <li class="has-submenu parent-menu-item">
-                            <a href="page-contact-two.html">Contact Us</a>   
+                            <a href="page-contact-two.html" >Contact Us</a>   
                         </li>
                     </ul><!--end navigation menu-->
                     <div class="buy-menu-btn d-none">
@@ -102,55 +97,28 @@
         </header><!--end header-->
         <!-- Navbar End -->
          <!-- Hero Start -->
-         <section class="home-slider position-relative">
-            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item " data-bs-interval="3000">
-                        <div class="bg-home slider-rtl-2 d-flex align-items-center" style="background:url('images/breast-cancer-awareness-woman-pink-t-shirt-with-satin-pink-ribbon-her-chest-supporting-symbolbreast-cancer-awareness-01-01.jpg') center center;">
-                            <div class="container">
-                                <div class="row align-items-center mt-5">
-                                    <div class="col-lg-7 col-md-7">
-                                        <div class="title-heading mt-4">                                    
-                                            <h1 class="display-4 title-white fw-bold mb-3">Breast surgical Care</h1>
-                                            <p class="para-desc text-white para-dark">The super speciality is engaged in thyroid surgery, adrenal & breast care at panacea.</p>
-                                            <div class="mt-4">
-                                                <a href="Page-breastCare.html" class="btn btn-soft-primary">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end container-->
+         <section class=" pb-4 bg-purple d-table w-100 " style="background: url('images/bg2.png') center center; padding-top: 110px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="position-relative">
+                            <img src="images/form-image-01.jpg" class="rounded img-fluid mx-auto d-block shadow rounded" alt="">
+                            
                         </div>
-                    </div>
+                    </div><!--end col-->
 
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <div class="bg-home slider-rtl-1 d-flex align-items-center" style="background:url('images/lung\ image-01.jpg') center center;">
-                            <div class="container">
-                                <div class="row align-items-center mt-5">
-                                    <div class="col-lg-7 col-md-7">
-                                        <div class="title-heading mt-4">
-                                            <h1 class="display-4 title-white fw-bold mb-3">Lung Care</h1>
-                                            <p class="para-desc text-white para-dark">The super speciality clinic engages in every kind of Lung Disease including difficult to treat asthma.</p>
-                                            <div class="mt-4">
-                                                <a href="Page-LungCare.html" class="btn btn-soft-primary">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end container-->
+                    <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ms-lg-5">
+                            <span class="badge rounded-pill bg-soft-light">About us</span>
+                            <h4 class="title text-white mt-3 mb-4">A great place to receive care</h4>
+                            <p class="text-white-50 para-desc">We at <span class="text-white"> PANACEA </span> have our motto of “Patient first”. We strive hard to make patients’ journey from sickness to well-being a smooth, comfortable process. A Humane approach and trying to offer a solution or remedy for all difficulties or diseases are nothing but the meaning of the word “Panacea”.  As said by Trudeau in the 19th century his words even resonate today “to cure sometimes, to relieve often, and to comfort always. Our team constantly works to create world-class facilities and state of the art services in respiratory medicine, endocrine surgery and breast surgery. </p>
+                            
                         </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
         </section><!--end section-->
+        
         <!-- Hero End -->
        
          <!-- Start -->
@@ -160,7 +128,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card features fea-purple rounded p-4 bg-white position-relative overflow-hidden border-0">
                             <span class="h1 icon2 text-purple">
-                                <i class="uil uil-newspaper"></i>
+                                <i class="uil uil-clock"></i>
                             </span>
                             <div class="card-body p-0 content">
                                 <h5>Appointment</h5>
@@ -222,191 +190,56 @@
        
 
         <!-- Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="position-relative">
-                            <img src="images/form-image-01.jpg" class="rounded img-fluid mx-auto d-block shadow rounded" alt="">
-                            
+        <section class="home-slider position-relative">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item " data-bs-interval="3000">
+                        <div class="bg-home slider-rtl-2 d-flex align-items-center" style="background:url('images/breast-cancer-awareness-woman-pink-t-shirt-with-satin-pink-ribbon-her-chest-supporting-symbolbreast-cancer-awareness-01-01.jpg') center center;">
+                            <div class="container">
+                                <div class="row align-items-center mt-5">
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="title-heading mt-4">                                    
+                                            <h1 class="display-4 title-white fw-bold mb-3">Breast surgical Care</h1>
+                                            <p class="para-desc text-white para-dark">The super speciality is engaged in thyroid surgery, adrenal & breast care at panacea.</p>
+                                            <div class="mt-4">
+                                                <a href="Page-breastCare.html" class="btn btn-soft-primary">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end container-->
                         </div>
-                    </div><!--end col-->
+                    </div>
 
-                    <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title ms-lg-5">
-                            <span class="badge rounded-pill bg-soft-primary">About us</span>
-                            <h4 class="title mt-3 mb-4">A great place to receive care</h4>
-                            <p class="text-muted para-desc">We at <span class="text-purple">PANACEA</span> have our motto of “Patient first”. We strive hard to make patients’ journey from sickness to well-being a smooth, comfortable process. A Humane approach and trying to offer a solution or remedy for all difficulties or diseases are nothing but the meaning of the word “Panacea”.  As said by Trudeau in the 19th century his words even resonate today “to cure sometimes, to relieve often, and to comfort always. Our team constantly works to create world-class facilities and state of the art services in respiratory medicine, endocrine surgery and breast surgery. </p>
-                            <div class="mt-4">
-                                <a href="javascript:void(0)" class="btn btn-purple">Read More</a>
-                            </div>
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="bg-home slider-rtl-1 d-flex align-items-center" style="background:url('images/lung\ image-01.jpg') center center;">
+                            <div class="container">
+                                <div class="row align-items-center mt-5">
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="title-heading mt-4">
+                                            <h1 class="display-4 title-white fw-bold mb-3">Lung Care</h1>
+                                            <p class="para-desc text-white para-dark">The super speciality clinic engages in every kind of Lung Disease including difficult to treat asthma.</p>
+                                            <div class="mt-4">
+                                                <a href="Page-LungCare.html" class="btn btn-soft-primary">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end container-->
                         </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-end mb-4 pb-2">
-                    <div class="col-md-8">
-                        <div class="section-title text-center text-md-start">
-                            <h6 class="text-purple">Services</h6>
-                            <h4 class="title mb-4">Our Medical Services</h4>
-                            <!-- <p class="text-muted mb-0 para-desc">Start working with <span class="text-purple fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p> -->
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-4 mt-4 mt-sm-0 d-none d-md-block">
-                        <div class="text-center text-md-end">
-                            <a href="javascript:void(0)" class="text-purple h6">See More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-md-4 mt-4 pt-2">
-                        <ul class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0 sticky-bar" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link rounded active" id="dentalcare" data-bs-toggle="pill" href="#dental" role="tab" aria-controls="dental" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Bronchoscopy.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="cardeography" data-bs-toggle="pill" href="#cardeo" role="tab" aria-controls="cardeo" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Interventional pulmonology and its various aspects.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="eyecare" data-bs-toggle="pill" href="#eye" role="tab" aria-controls="eye" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">MDR TB.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="general-serve" data-bs-toggle="pill" href="#general" role="tab" aria-controls="general" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Lung Cancer-Diagnosis.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="medicine" data-bs-toggle="pill" href="#medical" role="tab" aria-controls="medical" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0"> Asthma and allergy disorders including difficult to treat asthma/COPD.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="orthopadic" data-bs-toggle="pill" href="#ortho" role="tab" aria-controls="ortho" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Interstitial lung diseases.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="orthopadic" data-bs-toggle="pill" href="#sleep_med" role="tab" aria-controls="ortho" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Sleep Medicine.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-
-                            <li class="nav-item mt-2">
-                                <a class="nav-link rounded" id="orthopadic" data-bs-toggle="pill" href="#critical" role="tab" aria-controls="ortho" aria-selected="false">
-                                    <div class="text-start py-1 px-2">
-                                        <h6 class="mb-0">Respiratory Critical Care.</h6>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                        </ul><!--end nav pills-->
-                    </div><!--end col-->
-
-                    <div class="col-md-8 col-12 mt-4 pt-2">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade bg-white show active p-4 rounded shadow" id="dental" role="tabpanel" aria-labelledby="dentalcare">
-                                <img src="images/Bronchoscopy.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Bronchoscopy</h5>
-                                    <p class="text-muted my-3">With the utilization of unique inflatables of different lengths and measurements, the aviation route might be enlarged.</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="cardeo" role="tabpanel" aria-labelledby="cardeography">
-                                <img src="images/Bronchoscopy--.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Interventional pulmonology and its various aspects.</h5>
-                                    <p class="text-muted my-3">Aspiratory work tests (PFTs) are a gathering of noninvasive tests that action how well the lungs are working.</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="eye" role="tabpanel" aria-labelledby="eyecare">
-                                <img src="images/mdr tb.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>MDR TB.</h5>
-                                    <p class="text-muted my-3">This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="general" role="tabpanel" aria-labelledby="general-serve">
-                                <img src="images/lung diagnosis.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Lung Cancer-Diagnosis.</h5>
-                                    <p class="text-muted my-3">This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="medical" role="tabpanel" aria-labelledby="medicine">
-                                <img src="images/asthma-inhaler-stock.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Asthma and allergy disorders including difficult to treat asthma/COPD.</h5>
-                                    <p class="text-muted my-3">This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="ortho" role="tabpanel" aria-labelledby="orthopadic">
-                                <img src="images/Interstitial lung diseases..jfif" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Interstitial lung diseases.</h5>
-                                    <p class="text-muted my-3">Asthma is a condition wherein there is enlarging in the lung tubes causing their restricting and makes it difficult to relax. With regards to COPD or Chronic Obstructive Pulmonary Disease, relatively few individuals know about...</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="sleep_med" role="tabpanel" aria-labelledby="orthopadic">
-                                <img src="images/Side-Effects-of-Sleep-Medication.webp" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Sleep Medicine</h5>
-                                    <p class="text-muted my-3">Asthma is a condition wherein there is enlarging in the lung tubes causing their restricting and makes it difficult to relax. With regards to COPD or Chronic Obstructive Pulmonary Disease, relatively few individuals know about...</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                            <div class="tab-pane fade bg-white p-4 rounded shadow" id="critical" role="tabpanel" aria-labelledby="orthopadic">
-                                <img src="images/oxygen-mask-at-hospital-600x300.jpg" class="img-fluid rounded shadow" alt="">
-                                <div class="mt-4">
-                                    <h5>Respiratory Critical Care.</h5>
-                                    <p class="text-muted my-3">Asthma is a condition wherein there is enlarging in the lung tubes causing their restricting and makes it difficult to relax. With regards to COPD or Chronic Obstructive Pulmonary Disease, relatively few individuals know about...</p>
-                                    <a href="javascript:void(0)" class="text-purple">Learn More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
-                                </div>
-                            </div><!--end teb pane-->
-                        </div><!--end tab content-->
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
         </section><!--end section-->
+        
         <!-- End -->
 
         <!-- Start -->
@@ -496,10 +329,10 @@
                         </a>
                         <p class="mt-4"></p>
                         <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/Panaceaopd/" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/panacea_opd/?hl=en" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/panaceaopd" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            
                         </ul><!--end icon-->
                     </div><!--end col-->
                     
@@ -509,7 +342,7 @@
                         <h5 class="text-light footer-head">Usefull Links</h5>
                         <ul class="list-unstyled footer-list mt-4">
                         <li><a href="index.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
-                        <li><a href="index.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
+                        <li><a href="Services.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
                         <li><a href="page-blog-list.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
                         </ul>
                     </div><!--end col-->
@@ -549,7 +382,7 @@
                                 </div><!--end col-->
 
                                 <div class="col-lg-6 col-md-7">
-                                    <form class="login-form p-4">
+                                    <form class="login-form p-4" id="contact-form">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                     <div class="mb-3">
@@ -570,22 +403,23 @@
                                                     </div>
                                                 </div> 
                                             </div><!--end col-->
-
-                                            <div class="col-lg-12">
+                                            <div class="col-md-12">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Subject</label>
-                                                    <div class="form-icon position-relative">
-                                                        <i data-feather="book" class="fea icon-sm icons"></i>
-                                                        <input name="subject" id="subject" class="form-control ps-5" placeholder="subject :">
-                                                    </div>
+                                                    <label class="form-label">Booking for : <span class="text-danger">*</span></label>
+                                                    <select class="form-control custom-select" id="Sortbylist-Shop">
+                                                        <option>Select</option>
+                                                        <option>Dr. Sameer Lote</option>
+                                                        <option>Dr. Arundhati Marathe Lote</option>
+                                                    </select>
                                                 </div>
-                                            </div>
+                                            </div><!--end col-->
+                                            
                                             <div class="col-12">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Comments <span class="text-danger">*</span></label>
+                                                    <label class="form-label">Description : <span class="text-danger">*</span></label>
                                                     <div class="form-icon position-relative">
-                                                        <i data-feather="message-circle" class="fea icon-sm icons clearfix"></i>
-                                                        <textarea name="comments" id="comments" rows="2" class="form-control ps-5" placeholder="Message :"></textarea>
+                                                        
+                                                        <textarea name="comments" id="comments" rows="2" class="form-control" placeholder=" :"></textarea>
                                                     </div>
                                                 </div>
                                             </div><!--end col-->
@@ -613,7 +447,11 @@
         <!-- Back to top -->
 
         
-
+        <script type="text/javascript">
+            (function(){
+            emailjs.init("GMBUTSulNqjyb9NSu");
+        })();
+        </script>
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
@@ -625,7 +463,5 @@
         <!-- Main Js -->
         <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
         <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
-        <!--Send Email JS-->
-        <script src="js/emailjs.js"></script>
     </body>
 </html>

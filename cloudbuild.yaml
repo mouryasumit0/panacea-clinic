@@ -1,17 +1,17 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/novel-group-348718/panacea-clinic-prod-test', '.']
+  args: ['build', '-t', 'gcr.io/novel-group-348718/panacea-clinic-prod', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/novel-group-348718/panacea-clinic-prod-test']
+  args: ['push', 'gcr.io/novel-group-348718/panacea-clinic-prod']
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'run'
   - 'deploy'
-  - 'panacea-clinic-prod-test'
+  - 'panacea-clinic-prod'
   - '--image'
-  - 'gcr.io/novel-group-348718/panacea-clinic-prod-test'
+  - 'gcr.io/novel-group-348718/panacea-clinic-prod'
   - '--port'
   - '80'
   - '--region'
@@ -29,4 +29,4 @@ steps:
   - '256Mi'
   
 images:
-- gcr.io/novel-group-348718/panacea-clinic-prod-test
+- gcr.io/novel-group-348718/panacea-clinic-prod

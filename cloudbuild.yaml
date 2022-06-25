@@ -29,4 +29,4 @@ steps:
   - '256Mi'
   
 images:
-- gcr.io/novel-group-348718/panacea-clinic-prod-test
+- gcr.io/novel-group-348718/panacea-clinic-prod

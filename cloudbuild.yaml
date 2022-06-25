@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/novel-group-348718/panacea-clinic-prod', '.']
+  args: ['build', '-t', 'gcr.io/novel-group-348718/panacea-clinic-prod-test', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/novel-group-348718/panacea-clinic-prod-test']

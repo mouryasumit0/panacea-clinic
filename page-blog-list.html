@@ -128,28 +128,41 @@
         <!--Blog Lists Start-->
         <section class="section">
             <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6 col-12 mb-4 pb-2">
-                        <div class="card blog rounded border-0 shadow overflow-hidden">
-                            <div class="row align-items-center g-0">
-                                
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-md-2 d-none d-md-block">
+                                <ul class="list-unstyled text-center sticky-bar social-icon mb-0">
+                                    <li class="mb-3 h6">Share</li>
+                                    <li><a   class="rounded social-share facebook"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li><a  class="rounded social-share twitter"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li><a  class="rounded social-share Instagram"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                   
+                                </ul><!--end icon-->
+                            </div>
+        
+                            <div class="col-md-10">
+                               <img src="images/prevent asthma-01.jpg" class="img-fluid rounded-md shadow" alt="">
 
-                                <div class="col-md-12">
-                                    <div class="card-body content">
-                                        <h5><a href="javascript:void(0)" class="card-title title text-dark">Soon we'll publish our blogs </a></h5>
-                                        <p class="text-muted mb-0">Visit again for more update</p>
-                                        <div class="post-meta d-flex justify-content-between mt-3">
-                                            </div>
-                                    </div>
-                                </div><!--end col-->
-                            </div> <!--end row-->
-                        </div><!--end blog post-->
-                    </div><!--end col-->
+                                <h5 class="mt-4">Prevent asthma attack before monsoon</h5>
 
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section -->
-        <!--Blog Lists End-->
+                                <p class="text-muted">Asthma is a disorder characterize by breathlessness, wheezing, chest tightness and cough usually due to a trigger stimuli and hyper-responsiveness of airways. Common triggers (allergens)include dust mite, irritant exposure-smoke and other gases, tobacco consumption and smoking and various other factors.<br><br>
+
+                                    Seasonal change can be an important trigger for asthma attack. Especially cloudy weather can trigger asthma. The most common allergen is dust mite. It can absorb humidity and can grow extensively along with other fungus in moist environment. Common prevention strategies for moisture control include frequent air changes, I.e. keeping windows open and ensuring proper ventilation. Dehumidifiers are also effective and readily available in market. Carpets should be avoided, if kept should be treated with heat. Mattress, bed covers, pillows, blankets, bedsheets should be frequently changed and washed with hot water along with detergent. Allergen denaturing agents (benzyl benzoate, tannic acid) are rarely useful.<br> <br>
+                                    
+                                    Other common allergens are pet allergens. Dog hair /cat hair (dander) can cause asthma exacerbation and can reduce quality of life. The best strategy  is to avoid a pet at home. However, for some families pet is considered as a “member of family” in such cases as far as possible exposure should be avoided, pets should be kept outdoors.<br>
+                                    
+                                    House cleaning with a vacuum cleaner, especially having a good filter (preferably HEPA) can significantly reduce indoor allergens. Air purifier can also be used. Pest control to remove cockroaches and other bugs can be reinforced. However, all these measures can cause financial burden. Hence, simple frequent house cleaning with usage of mask can be a reasonable alternative.<br> <br>
+                                    
+                                    If you are a known asthmatic, it is always better to be compliant on inhalers and step up medications as per doctor’s advice/ asthma action plan. Keeping  peak flow meter readings handy and daily monitoring can keep a check on asthma attack. Kindly consult your doctor for further details. Regular exercise and proper diet, maintaining proper meal times, can keep asthma and other diseases at a bay. Eat healthy, start walking and stop smoking, so you can breathe healthy.</p>
+
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
         <!-- Start -->
         <div class="container-fluid px-0" id="Book-Appointment">
@@ -200,7 +213,7 @@
                     <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Usefull Links</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="index.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                        
                         <li><a href="Services.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
                         <li><a href="page-blog-list.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
                         </ul>
@@ -304,8 +317,40 @@
         <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-purple back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
         <!-- Back to top -->
 
-        
+        <!-- facebook api start -->
+        <script>
+            setShareLinks();
 
+            function socialWindow(url) {
+                var left = (screen.width - 570) / 2;
+                var top = (screen.height - 570) / 2;
+                var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+                // Setting 'params' to an empty string will launch
+                // content in a new tab or window rather than a pop-up.
+                // params = "";
+                window.open(url, "NewWindow", params);
+            }
+
+            function setShareLinks() {
+                var pageUrl = encodeURIComponent(document.URL);
+                var tweet = encodeURIComponent($("meta[property='og:description']").attr("content"));
+
+                $(".social-share.facebook").on("click", function () {
+                    url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+                    socialWindow(url);
+                });
+
+                $(".social-share.twitter").on("click", function () {
+                    url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + tweet;
+                    socialWindow(url);
+                });
+
+                $(".social-share.Instagram").on("click", function () {
+                    url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+                    socialWindow(url);
+                })
+            }
+        </script>
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- Icons -->
